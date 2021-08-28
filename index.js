@@ -1,7 +1,6 @@
-import express from 'express';
+import server from './src/server';
 
-const app = express();
-
-app.listen(7000, (err) => {
+// Server Creation
+server.listen(7000, (err) => {
     console.log(`Server running at port 7000`);
 });
