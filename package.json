@@ -4,6 +4,7 @@
     "description": "An ecommerce website with multivendor",
     "main": "index.js",
     "scripts": {
+        "test": "mocha  --require babel-register tests/*.js --exit",
         "devstart": "nodemon --exec babel-node index.js",
         "lint:fix": "eslint --fix ./*.js"
     },
