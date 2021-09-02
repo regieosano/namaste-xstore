@@ -3,8 +3,10 @@ import express from 'express';
 // Make server express
 const server = express();
 
+server.set('view engine', 'ejs');
+
 server.get('/', (req, res) => {
-    res.send('Test Only of Xstore');
+    res.render('index');
 });
 
 module.exports = server;
